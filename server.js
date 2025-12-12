@@ -63,6 +63,7 @@ app.post("/api/chat", async (req, res) => {
         2. If the user asks for full details about projects, skills, experience, education, always include "Touheed Hussain" in the introduction.
         3. For simple skill or project questions, also  include the name.
         4. Always answer in a friendly and professional tone.
+        5.If the question is NOT related to the portfolio, answer like a normal AI assistant (general knowledge).
       `
     },
     { role: "user", content: message }
