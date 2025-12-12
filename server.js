@@ -40,6 +40,10 @@ const portfolioData = {
 const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 const OPENAI_API_KEY = process.env.GROQ_API_KEY;
 
+app.get("/", (req, res) => {
+  res.send("Portfolio Chatbot Backend is running!");
+});
+
 app.post("/api/chat", async (req, res) => {
   try {
     const { message } = req.body;
